@@ -1,0 +1,998 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'onoff',
+1 verbose cli   '-g' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'onoff', null ]
+7 verbose cache add spec onoff
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'onoff',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'onoff',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed onoff@*
+10 verbose addNamed "*" is a valid semver range for onoff
+11 silly addNameRange { name: 'onoff', range: '*', hasData: false }
+12 silly mapToRegistry name onoff
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/onoff
+16 verbose addNameRange registry:https://registry.npmjs.org/onoff not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/onoff
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 11:35:47
+20 verbose request id 2f1782591be1b06d
+21 http request GET https://registry.npmjs.org/onoff
+22 http 200 https://registry.npmjs.org/onoff
+23 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+23 verbose headers   server: 'UploadServer',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'last-modified': 'Sun, 11 Feb 2018 13:17:22 GMT',
+23 verbose headers   etag: '"5a804262-cdef"',
+23 verbose headers   'x-npm-region': 'US-West',
+23 verbose headers   'content-encoding': 'gzip',
+23 verbose headers   'content-length': '9724',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Tue, 13 Feb 2018 19:35:48 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '0',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-pao17443-PAO',
+23 verbose headers   'x-cache': 'MISS',
+23 verbose headers   'x-cache-hits': '0',
+23 verbose headers   'x-timer': 'S1518550548.223540,VS0,VE155',
+23 verbose headers   vary: 'Accept-Encoding, Accept' }
+24 silly get cb [ 200,
+24 silly get   { 'content-type': 'application/json; charset=UTF-8',
+24 silly get     server: 'UploadServer',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'last-modified': 'Sun, 11 Feb 2018 13:17:22 GMT',
+24 silly get     etag: '"5a804262-cdef"',
+24 silly get     'x-npm-region': 'US-West',
+24 silly get     'content-encoding': 'gzip',
+24 silly get     'content-length': '9724',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Tue, 13 Feb 2018 19:35:48 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-pao17443-PAO',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1518550548.223540,VS0,VE155',
+24 silly get     vary: 'Accept-Encoding, Accept' } ]
+25 verbose get saving onoff to /root/.npm/registry.npmjs.org/onoff/.cache.json
+26 silly addNameRange number 2 { name: 'onoff', range: '*', hasData: true }
+27 silly addNameRange versions [ 'onoff',
+27 silly addNameRange   [ '0.0.1',
+27 silly addNameRange     '0.1.0',
+27 silly addNameRange     '0.1.2',
+27 silly addNameRange     '0.1.3',
+27 silly addNameRange     '0.1.4',
+27 silly addNameRange     '0.1.5',
+27 silly addNameRange     '0.1.6',
+27 silly addNameRange     '0.1.7',
+27 silly addNameRange     '0.2.0',
+27 silly addNameRange     '0.2.1',
+27 silly addNameRange     '0.2.2',
+27 silly addNameRange     '0.2.3',
+27 silly addNameRange     '0.3.0',
+27 silly addNameRange     '0.3.1',
+27 silly addNameRange     '0.3.2',
+27 silly addNameRange     '1.0.0',
+27 silly addNameRange     '1.0.1',
+27 silly addNameRange     '1.0.2',
+27 silly addNameRange     '1.0.3',
+27 silly addNameRange     '1.0.4',
+27 silly addNameRange     '1.1.0',
+27 silly addNameRange     '1.1.1',
+27 silly addNameRange     '1.1.2',
+27 silly addNameRange     '1.1.3',
+27 silly addNameRange     '1.1.4',
+27 silly addNameRange     '1.1.5',
+27 silly addNameRange     '1.1.7',
+27 silly addNameRange     '1.1.8',
+27 silly addNameRange     '1.1.9',
+27 silly addNameRange     '1.2.0' ] ]
+28 silly addNamed onoff@1.2.0
+29 verbose addNamed "1.2.0" is a plain semver version for onoff
+30 silly mapToRegistry name onoff
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/onoff
+34 verbose addRemoteTarball https://registry.npmjs.org/onoff/-/onoff-1.2.0.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/onoff/-/onoff-1.2.0.tgz',
+35 verbose addRemoteTarball   'f642d4e040cd57f63cac5bcee226b573a5795d12' ]
+36 info retry fetch attempt 1 at 11:35:49
+37 info attempt registry request try #1 at 11:35:49
+38 http fetch GET https://registry.npmjs.org/onoff/-/onoff-1.2.0.tgz
+39 http fetch 200 https://registry.npmjs.org/onoff/-/onoff-1.2.0.tgz
+40 silly fetchAndShaCheck shasum f642d4e040cd57f63cac5bcee226b573a5795d12
+41 verbose addTmpTarball /tmp/npm-3594-b392a4f8/registry.npmjs.org/onoff/-/onoff-1.2.0.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for onoff@1.2.0
+43 silly cache afterAdd onoff@1.2.0
+44 verbose afterAdd /root/.npm/onoff/1.2.0/package/package.json not in flight; writing
+45 verbose afterAdd /root/.npm/onoff/1.2.0/package/package.json written
+46 silly install resolved [ { name: 'onoff',
+46 silly install resolved     version: '1.2.0',
+46 silly install resolved     description: 'GPIO access and interrupt detection with Node.js',
+46 silly install resolved     main: 'onoff.js',
+46 silly install resolved     directories: { example: 'examples', test: 'test' },
+46 silly install resolved     scripts: { test: 'echo "Tests can only be run manually from the command line. They access hardware GPIOs." && exit 1' },
+46 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/fivdi/onoff.git' },
+46 silly install resolved     engines: { node: '>=0.10.0' },
+46 silly install resolved     dependencies: { epoll: '~1.0.2' },
+46 silly install resolved     keywords:
+46 silly install resolved      [ 'gpio',
+46 silly install resolved        'embedded',
+46 silly install resolved        'interrupt',
+46 silly install resolved        'beaglebone',
+46 silly install resolved        'bbb',
+46 silly install resolved        'bb',
+46 silly install resolved        'raspberry',
+46 silly install resolved        'raspi',
+46 silly install resolved        'rpi',
+46 silly install resolved        'pi',
+46 silly install resolved        'linux' ],
+46 silly install resolved     author: { name: 'fivdi' },
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     gitHead: 'bc574daf7424083880032d3a4950f9469a17df1a',
+46 silly install resolved     bugs: { url: 'https://github.com/fivdi/onoff/issues' },
+46 silly install resolved     homepage: 'https://github.com/fivdi/onoff#readme',
+46 silly install resolved     _id: 'onoff@1.2.0',
+46 silly install resolved     _npmVersion: '5.5.1',
+46 silly install resolved     _nodeVersion: '8.9.3',
+46 silly install resolved     _npmUser: { name: 'fivdi', email: 'bdscooke@gmail.com' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { integrity: 'sha512-o41qBIIs6agXRjryGBIJpq1xour69VDBfROf3IX+wiwutIowPZDcjTRCqFo+HYleiQngO1wfNqHWpjm0l0oYwQ==',
+46 silly install resolved        shasum: 'f642d4e040cd57f63cac5bcee226b573a5795d12',
+46 silly install resolved        tarball: 'https://registry.npmjs.org/onoff/-/onoff-1.2.0.tgz',
+46 silly install resolved        fileCount: 25,
+46 silly install resolved        unpackedSize: 275419 },
+46 silly install resolved     _npmOperationalInternal:
+46 silly install resolved      { host: 's3://npm-registry-packages',
+46 silly install resolved        tmp: 'tmp/onoff_1.2.0_1518355040035_0.7278989052710918' },
+46 silly install resolved     _shasum: 'f642d4e040cd57f63cac5bcee226b573a5795d12',
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/onoff/-/onoff-1.2.0.tgz',
+46 silly install resolved     _from: 'onoff@*' } ]
+47 info install onoff@1.2.0 into /usr/local/lib
+48 info installOne onoff@1.2.0
+49 verbose installOne of onoff to /usr/local/lib not in flight; installing
+50 verbose lock using /root/.npm/_locks/onoff-f2713974fa0ced28.lock for /usr/local/lib/node_modules/onoff
+51 silly install write writing onoff 1.2.0 to /usr/local/lib/node_modules/onoff
+52 verbose unbuild lib/node_modules/onoff
+53 silly gentlyRm /usr/local/lib/node_modules/onoff is being purged from base /usr/local
+54 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/onoff
+55 verbose tar unpack /root/.npm/onoff/1.2.0/package.tgz
+56 verbose tar unpacking to /usr/local/lib/node_modules/onoff
+57 silly gentlyRm /usr/local/lib/node_modules/onoff is being purged
+58 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/onoff
+59 silly gunzTarPerm modes [ '755', '644' ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+62 silly gunzTarPerm extractEntry History.md
+63 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+64 silly gunzTarPerm extractEntry LICENSE
+65 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+66 silly gunzTarPerm extractEntry onoff.js
+67 silly gunzTarPerm modified mode [ 'onoff.js', 436, 420 ]
+68 silly gunzTarPerm extractEntry README.md
+69 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+70 silly gunzTarPerm extractEntry examples/blink-led-async.js
+71 silly gunzTarPerm modified mode [ 'examples/blink-led-async.js', 436, 420 ]
+72 silly gunzTarPerm extractEntry examples/blink-led.js
+73 silly gunzTarPerm modified mode [ 'examples/blink-led.js', 436, 420 ]
+74 silly gunzTarPerm extractEntry examples/light-switch.js
+75 silly gunzTarPerm modified mode [ 'examples/light-switch.js', 436, 420 ]
+76 silly gunzTarPerm extractEntry examples/light-switch.png
+77 silly gunzTarPerm modified mode [ 'examples/light-switch.png', 436, 420 ]
+78 silly gunzTarPerm extractEntry examples/mygpio-overlay.dts
+79 silly gunzTarPerm modified mode [ 'examples/mygpio-overlay.dts', 436, 420 ]
+80 silly gunzTarPerm extractEntry examples/run-examples
+81 silly gunzTarPerm modified mode [ 'examples/run-examples', 509, 493 ]
+82 silly gunzTarPerm extractEntry examples/wait-for-interrupt.js
+83 silly gunzTarPerm modified mode [ 'examples/wait-for-interrupt.js', 436, 420 ]
+84 silly gunzTarPerm extractEntry test/blink-led.js
+85 silly gunzTarPerm modified mode [ 'test/blink-led.js', 436, 420 ]
+86 silly gunzTarPerm extractEntry test/configure-and-check-active-low.js
+87 silly gunzTarPerm modified mode [ 'test/configure-and-check-active-low.js', 436, 420 ]
+88 silly gunzTarPerm extractEntry test/configure-and-check-input.js
+89 silly gunzTarPerm modified mode [ 'test/configure-and-check-input.js', 436, 420 ]
+90 silly gunzTarPerm extractEntry test/configure-and-check-output.js
+91 silly gunzTarPerm modified mode [ 'test/configure-and-check-output.js', 436, 420 ]
+92 silly gunzTarPerm extractEntry test/export-many-times.js
+93 silly gunzTarPerm modified mode [ 'test/export-many-times.js', 436, 420 ]
+94 silly gunzTarPerm extractEntry test/many-interrupts.js
+95 silly gunzTarPerm modified mode [ 'test/many-interrupts.js', 436, 420 ]
+96 silly gunzTarPerm extractEntry test/output-with-edge-bug.js
+97 silly gunzTarPerm modified mode [ 'test/output-with-edge-bug.js', 436, 420 ]
+98 silly gunzTarPerm extractEntry test/performance-async.js
+99 silly gunzTarPerm modified mode [ 'test/performance-async.js', 436, 420 ]
+100 silly gunzTarPerm extractEntry test/performance-interrupt.js
+101 silly gunzTarPerm modified mode [ 'test/performance-interrupt.js', 436, 420 ]
+102 silly gunzTarPerm extractEntry test/performance-sync.js
+103 silly gunzTarPerm modified mode [ 'test/performance-sync.js', 436, 420 ]
+104 silly gunzTarPerm extractEntry test/run-tests
+105 silly gunzTarPerm modified mode [ 'test/run-tests', 509, 493 ]
+106 silly gunzTarPerm extractEntry test/wait-for-interrupt.js
+107 silly gunzTarPerm modified mode [ 'test/wait-for-interrupt.js', 436, 420 ]
+108 silly gunzTarPerm extractEntry test/wait-for-many-interrupts.js
+109 silly gunzTarPerm modified mode [ 'test/wait-for-many-interrupts.js', 436, 420 ]
+110 verbose write writing to /usr/local/lib/node_modules/onoff/package.json
+111 info preinstall onoff@1.2.0
+112 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/onoff/package.json
+113 silly prepareForInstallMany adding epoll@~1.0.2 from onoff dependencies
+114 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/onoff/package.json
+115 silly cache add args [ 'epoll@~1.0.2', null ]
+116 verbose cache add spec epoll@~1.0.2
+117 silly cache add parsed spec Result {
+117 silly cache add   raw: 'epoll@~1.0.2',
+117 silly cache add   scope: null,
+117 silly cache add   name: 'epoll',
+117 silly cache add   rawSpec: '~1.0.2',
+117 silly cache add   spec: '>=1.0.2 <1.1.0',
+117 silly cache add   type: 'range' }
+118 silly addNamed epoll@>=1.0.2 <1.1.0
+119 verbose addNamed ">=1.0.2 <1.1.0" is a valid semver range for epoll
+120 silly addNameRange { name: 'epoll', range: '>=1.0.2 <1.1.0', hasData: false }
+121 silly mapToRegistry name epoll
+122 silly mapToRegistry using default registry
+123 silly mapToRegistry registry https://registry.npmjs.org/
+124 silly mapToRegistry uri https://registry.npmjs.org/epoll
+125 verbose addNameRange registry:https://registry.npmjs.org/epoll not in flight; fetching
+126 verbose request uri https://registry.npmjs.org/epoll
+127 verbose request no auth needed
+128 info attempt registry request try #1 at 11:35:55
+129 http request GET https://registry.npmjs.org/epoll
+130 http 200 https://registry.npmjs.org/epoll
+131 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+131 verbose headers   server: 'UploadServer',
+131 verbose headers   'cache-control': 'max-age=300',
+131 verbose headers   'last-modified': 'Mon, 25 Dec 2017 15:14:43 GMT',
+131 verbose headers   etag: '"5a4115e3-b4e0"',
+131 verbose headers   'x-npm-region': 'US-West',
+131 verbose headers   'content-encoding': 'gzip',
+131 verbose headers   'content-length': '6929',
+131 verbose headers   'accept-ranges': 'bytes',
+131 verbose headers   date: 'Tue, 13 Feb 2018 19:35:56 GMT',
+131 verbose headers   via: '1.1 varnish',
+131 verbose headers   age: '0',
+131 verbose headers   connection: 'keep-alive',
+131 verbose headers   'x-served-by': 'cache-pao17421-PAO',
+131 verbose headers   'x-cache': 'MISS',
+131 verbose headers   'x-cache-hits': '0',
+131 verbose headers   'x-timer': 'S1518550556.106011,VS0,VE104',
+131 verbose headers   vary: 'Accept-Encoding, Accept' }
+132 silly get cb [ 200,
+132 silly get   { 'content-type': 'application/json; charset=UTF-8',
+132 silly get     server: 'UploadServer',
+132 silly get     'cache-control': 'max-age=300',
+132 silly get     'last-modified': 'Mon, 25 Dec 2017 15:14:43 GMT',
+132 silly get     etag: '"5a4115e3-b4e0"',
+132 silly get     'x-npm-region': 'US-West',
+132 silly get     'content-encoding': 'gzip',
+132 silly get     'content-length': '6929',
+132 silly get     'accept-ranges': 'bytes',
+132 silly get     date: 'Tue, 13 Feb 2018 19:35:56 GMT',
+132 silly get     via: '1.1 varnish',
+132 silly get     age: '0',
+132 silly get     connection: 'keep-alive',
+132 silly get     'x-served-by': 'cache-pao17421-PAO',
+132 silly get     'x-cache': 'MISS',
+132 silly get     'x-cache-hits': '0',
+132 silly get     'x-timer': 'S1518550556.106011,VS0,VE104',
+132 silly get     vary: 'Accept-Encoding, Accept' } ]
+133 verbose get saving epoll to /root/.npm/registry.npmjs.org/epoll/.cache.json
+134 silly addNameRange number 2 { name: 'epoll', range: '>=1.0.2 <1.1.0', hasData: true }
+135 silly addNameRange versions [ 'epoll',
+135 silly addNameRange   [ '0.0.1',
+135 silly addNameRange     '0.0.2',
+135 silly addNameRange     '0.0.3',
+135 silly addNameRange     '0.0.4',
+135 silly addNameRange     '0.0.5',
+135 silly addNameRange     '0.0.6',
+135 silly addNameRange     '0.0.7',
+135 silly addNameRange     '0.0.8',
+135 silly addNameRange     '0.1.0',
+135 silly addNameRange     '0.1.1',
+135 silly addNameRange     '0.1.2',
+135 silly addNameRange     '0.1.3',
+135 silly addNameRange     '0.1.4',
+135 silly addNameRange     '0.1.5',
+135 silly addNameRange     '0.1.7',
+135 silly addNameRange     '0.1.8',
+135 silly addNameRange     '0.1.9',
+135 silly addNameRange     '0.1.10',
+135 silly addNameRange     '0.1.11',
+135 silly addNameRange     '0.1.12',
+135 silly addNameRange     '0.1.13',
+135 silly addNameRange     '0.1.14',
+135 silly addNameRange     '0.1.15',
+135 silly addNameRange     '0.1.16',
+135 silly addNameRange     '0.1.17',
+135 silly addNameRange     '0.1.18',
+135 silly addNameRange     '0.1.19',
+135 silly addNameRange     '0.1.20',
+135 silly addNameRange     '0.1.21',
+135 silly addNameRange     '0.1.22',
+135 silly addNameRange     '1.0.0',
+135 silly addNameRange     '1.0.1',
+135 silly addNameRange     '1.0.2' ] ]
+136 silly addNamed epoll@1.0.2
+137 verbose addNamed "1.0.2" is a plain semver version for epoll
+138 silly mapToRegistry name epoll
+139 silly mapToRegistry using default registry
+140 silly mapToRegistry registry https://registry.npmjs.org/
+141 silly mapToRegistry uri https://registry.npmjs.org/epoll
+142 verbose addRemoteTarball https://registry.npmjs.org/epoll/-/epoll-1.0.2.tgz not in flight; adding
+143 verbose addRemoteTarball [ 'https://registry.npmjs.org/epoll/-/epoll-1.0.2.tgz',
+143 verbose addRemoteTarball   'd7d913e3fbdaf4315bd029ceecf9dc6487713b57' ]
+144 info retry fetch attempt 1 at 11:35:56
+145 info attempt registry request try #1 at 11:35:56
+146 http fetch GET https://registry.npmjs.org/epoll/-/epoll-1.0.2.tgz
+147 http fetch 200 https://registry.npmjs.org/epoll/-/epoll-1.0.2.tgz
+148 silly fetchAndShaCheck shasum d7d913e3fbdaf4315bd029ceecf9dc6487713b57
+149 verbose addTmpTarball /tmp/npm-3594-b392a4f8/registry.npmjs.org/epoll/-/epoll-1.0.2.tgz not in flight; adding
+150 verbose addTmpTarball already have metadata; skipping unpack for epoll@1.0.2
+151 silly cache afterAdd epoll@1.0.2
+152 verbose afterAdd /root/.npm/epoll/1.0.2/package/package.json not in flight; writing
+153 verbose afterAdd /root/.npm/epoll/1.0.2/package/package.json written
+154 silly install resolved [ { name: 'epoll',
+154 silly install resolved     version: '1.0.2',
+154 silly install resolved     description: 'A low-level Node.js binding for the Linux epoll API',
+154 silly install resolved     main: 'epoll.js',
+154 silly install resolved     directories: { example: 'example', test: 'test' },
+154 silly install resolved     scripts:
+154 silly install resolved      { test: 'echo "Tests can only be run manually from the command line." && exit 1',
+154 silly install resolved        install: 'node-gyp rebuild' },
+154 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/fivdi/epoll.git' },
+154 silly install resolved     engines: { node: '>=0.10.0' },
+154 silly install resolved     dependencies: { bindings: '~1.3.0', nan: '~2.8.0' },
+154 silly install resolved     keywords:
+154 silly install resolved      [ 'epoll',
+154 silly install resolved        'epollpri',
+154 silly install resolved        'poll',
+154 silly install resolved        'pollpri',
+154 silly install resolved        'gpio',
+154 silly install resolved        'interrupt',
+154 silly install resolved        'linux' ],
+154 silly install resolved     author: { name: 'fivdi' },
+154 silly install resolved     license: 'MIT',
+154 silly install resolved     gypfile: true,
+154 silly install resolved     gitHead: '9d613004518f9cc5c3421da7db195c22cffdfda7',
+154 silly install resolved     bugs: { url: 'https://github.com/fivdi/epoll/issues' },
+154 silly install resolved     homepage: 'https://github.com/fivdi/epoll#readme',
+154 silly install resolved     _id: 'epoll@1.0.2',
+154 silly install resolved     _npmVersion: '5.5.1',
+154 silly install resolved     _nodeVersion: '9.0.0',
+154 silly install resolved     _npmUser: { name: 'fivdi', email: 'bdscooke@gmail.com' },
+154 silly install resolved     maintainers: [ [Object] ],
+154 silly install resolved     dist:
+154 silly install resolved      { integrity: 'sha512-3t2crZPej4v60YYvXE/pgJ62D4RZBd/UsEXsHd+H3xtDre0vO8aV9O+0ThIPlfZtHJ4vMPhz55fYK1j37rX9Ng==',
+154 silly install resolved        shasum: 'd7d913e3fbdaf4315bd029ceecf9dc6487713b57',
+154 silly install resolved        tarball: 'https://registry.npmjs.org/epoll/-/epoll-1.0.2.tgz' },
+154 silly install resolved     _npmOperationalInternal:
+154 silly install resolved      { host: 's3://npm-registry-packages',
+154 silly install resolved        tmp: 'tmp/epoll-1.0.2.tgz_1514137036800_0.49084727466106415' },
+154 silly install resolved     _shasum: 'd7d913e3fbdaf4315bd029ceecf9dc6487713b57',
+154 silly install resolved     _resolved: 'https://registry.npmjs.org/epoll/-/epoll-1.0.2.tgz',
+154 silly install resolved     _from: 'epoll@>=1.0.2 <1.1.0' } ]
+155 info install epoll@1.0.2 into /usr/local/lib/node_modules/onoff
+156 info installOne epoll@1.0.2
+157 verbose installOne of epoll to /usr/local/lib/node_modules/onoff not in flight; installing
+158 verbose lock using /root/.npm/_locks/epoll-4c03fef6dbce0644.lock for /usr/local/lib/node_modules/onoff/node_modules/epoll
+159 silly install write writing epoll 1.0.2 to /usr/local/lib/node_modules/onoff/node_modules/epoll
+160 verbose unbuild lib/node_modules/onoff/node_modules/epoll
+161 silly gentlyRm /usr/local/lib/node_modules/onoff/node_modules/epoll is being purged from base /usr/local
+162 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/onoff/node_modules/epoll
+163 verbose tar unpack /root/.npm/epoll/1.0.2/package.tgz
+164 verbose tar unpacking to /usr/local/lib/node_modules/onoff/node_modules/epoll
+165 silly gentlyRm /usr/local/lib/node_modules/onoff/node_modules/epoll is being purged
+166 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/onoff/node_modules/epoll
+167 silly gunzTarPerm modes [ '755', '644' ]
+168 silly gunzTarPerm extractEntry package.json
+169 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+170 silly gunzTarPerm extractEntry binding.gyp
+171 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+172 silly gunzTarPerm extractEntry epoll.js
+173 silly gunzTarPerm modified mode [ 'epoll.js', 436, 420 ]
+174 silly gunzTarPerm extractEntry History.md
+175 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+176 silly gunzTarPerm extractEntry LICENSE
+177 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+178 silly gunzTarPerm extractEntry README.md
+179 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+180 silly gunzTarPerm extractEntry example/interrupts-per-second/export
+181 silly gunzTarPerm modified mode [ 'example/interrupts-per-second/export', 509, 493 ]
+182 silly gunzTarPerm extractEntry example/interrupts-per-second/interrupts-per-second.js
+183 silly gunzTarPerm modified mode [ 'example/interrupts-per-second/interrupts-per-second.js',
+183 silly gunzTarPerm   436,
+183 silly gunzTarPerm   420 ]
+184 silly gunzTarPerm extractEntry example/interrupts-per-second/unexport
+185 silly gunzTarPerm modified mode [ 'example/interrupts-per-second/unexport', 509, 493 ]
+186 silly gunzTarPerm extractEntry example/watch-button/export
+187 silly gunzTarPerm modified mode [ 'example/watch-button/export', 509, 493 ]
+188 silly gunzTarPerm extractEntry example/watch-button/unexport
+189 silly gunzTarPerm modified mode [ 'example/watch-button/unexport', 509, 493 ]
+190 silly gunzTarPerm extractEntry example/watch-button/watch-button.js
+191 silly gunzTarPerm modified mode [ 'example/watch-button/watch-button.js', 436, 420 ]
+192 silly gunzTarPerm extractEntry src/epoll.cc
+193 silly gunzTarPerm modified mode [ 'src/epoll.cc', 436, 420 ]
+194 silly gunzTarPerm extractEntry src/epoll.h
+195 silly gunzTarPerm modified mode [ 'src/epoll.h', 436, 420 ]
+196 silly gunzTarPerm extractEntry test/brute-force-leak-check.js
+197 silly gunzTarPerm modified mode [ 'test/brute-force-leak-check.js', 436, 420 ]
+198 silly gunzTarPerm extractEntry test/closed.js
+199 silly gunzTarPerm modified mode [ 'test/closed.js', 436, 420 ]
+200 silly gunzTarPerm extractEntry test/do-almost-nothing.js
+201 silly gunzTarPerm modified mode [ 'test/do-almost-nothing.js', 436, 420 ]
+202 silly gunzTarPerm extractEntry test/do-nothing.js
+203 silly gunzTarPerm modified mode [ 'test/do-nothing.js', 436, 420 ]
+204 silly gunzTarPerm extractEntry test/no-gc-allowed.js
+205 silly gunzTarPerm modified mode [ 'test/no-gc-allowed.js', 436, 420 ]
+206 silly gunzTarPerm extractEntry test/one-shot.js
+207 silly gunzTarPerm modified mode [ 'test/one-shot.js', 436, 420 ]
+208 silly gunzTarPerm extractEntry test/performance-check.js
+209 silly gunzTarPerm modified mode [ 'test/performance-check.js', 436, 420 ]
+210 silly gunzTarPerm extractEntry test/run-tests
+211 silly gunzTarPerm modified mode [ 'test/run-tests', 509, 493 ]
+212 silly gunzTarPerm extractEntry test/two-shot.js
+213 silly gunzTarPerm modified mode [ 'test/two-shot.js', 436, 420 ]
+214 silly gunzTarPerm extractEntry test/util.js
+215 silly gunzTarPerm modified mode [ 'test/util.js', 436, 420 ]
+216 silly gunzTarPerm extractEntry test/verify-events.js
+217 silly gunzTarPerm modified mode [ 'test/verify-events.js', 436, 420 ]
+218 verbose write writing to /usr/local/lib/node_modules/onoff/node_modules/epoll/package.json
+219 info preinstall epoll@1.0.2
+220 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/onoff/node_modules/epoll/package.json
+221 silly prepareForInstallMany adding bindings@~1.3.0 from epoll dependencies
+222 silly prepareForInstallMany adding nan@~2.8.0 from epoll dependencies
+223 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/onoff/node_modules/epoll/package.json
+224 silly cache add args [ 'bindings@~1.3.0', null ]
+225 verbose cache add spec bindings@~1.3.0
+226 silly cache add parsed spec Result {
+226 silly cache add   raw: 'bindings@~1.3.0',
+226 silly cache add   scope: null,
+226 silly cache add   name: 'bindings',
+226 silly cache add   rawSpec: '~1.3.0',
+226 silly cache add   spec: '>=1.3.0 <1.4.0',
+226 silly cache add   type: 'range' }
+227 silly addNamed bindings@>=1.3.0 <1.4.0
+228 verbose addNamed ">=1.3.0 <1.4.0" is a valid semver range for bindings
+229 silly addNameRange { name: 'bindings', range: '>=1.3.0 <1.4.0', hasData: false }
+230 silly mapToRegistry name bindings
+231 silly mapToRegistry using default registry
+232 silly mapToRegistry registry https://registry.npmjs.org/
+233 silly mapToRegistry uri https://registry.npmjs.org/bindings
+234 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+235 silly cache add args [ 'nan@~2.8.0', null ]
+236 verbose cache add spec nan@~2.8.0
+237 silly cache add parsed spec Result {
+237 silly cache add   raw: 'nan@~2.8.0',
+237 silly cache add   scope: null,
+237 silly cache add   name: 'nan',
+237 silly cache add   rawSpec: '~2.8.0',
+237 silly cache add   spec: '>=2.8.0 <2.9.0',
+237 silly cache add   type: 'range' }
+238 silly addNamed nan@>=2.8.0 <2.9.0
+239 verbose addNamed ">=2.8.0 <2.9.0" is a valid semver range for nan
+240 silly addNameRange { name: 'nan', range: '>=2.8.0 <2.9.0', hasData: false }
+241 silly mapToRegistry name nan
+242 silly mapToRegistry using default registry
+243 silly mapToRegistry registry https://registry.npmjs.org/
+244 silly mapToRegistry uri https://registry.npmjs.org/nan
+245 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+246 verbose request uri https://registry.npmjs.org/bindings
+247 verbose request no auth needed
+248 info attempt registry request try #1 at 11:35:58
+249 http request GET https://registry.npmjs.org/bindings
+250 verbose request uri https://registry.npmjs.org/nan
+251 verbose request no auth needed
+252 info attempt registry request try #1 at 11:35:58
+253 http request GET https://registry.npmjs.org/nan
+254 http 200 https://registry.npmjs.org/bindings
+255 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+255 verbose headers   server: 'UploadServer',
+255 verbose headers   'cache-control': 'max-age=300',
+255 verbose headers   'last-modified': 'Tue, 30 Jan 2018 6:12:07 GMT',
+255 verbose headers   etag: '"5a700cb7-4c53"',
+255 verbose headers   'x-npm-region': 'US-West',
+255 verbose headers   'content-encoding': 'gzip',
+255 verbose headers   'content-length': '3882',
+255 verbose headers   'accept-ranges': 'bytes',
+255 verbose headers   date: 'Tue, 13 Feb 2018 19:35:59 GMT',
+255 verbose headers   via: '1.1 varnish',
+255 verbose headers   age: '9046',
+255 verbose headers   connection: 'keep-alive',
+255 verbose headers   'x-served-by': 'cache-pao17430-PAO',
+255 verbose headers   'x-cache': 'HIT',
+255 verbose headers   'x-cache-hits': '15',
+255 verbose headers   'x-timer': 'S1518550559.122271,VS0,VE0',
+255 verbose headers   vary: 'Accept-Encoding, Accept' }
+256 silly get cb [ 200,
+256 silly get   { 'content-type': 'application/json; charset=UTF-8',
+256 silly get     server: 'UploadServer',
+256 silly get     'cache-control': 'max-age=300',
+256 silly get     'last-modified': 'Tue, 30 Jan 2018 6:12:07 GMT',
+256 silly get     etag: '"5a700cb7-4c53"',
+256 silly get     'x-npm-region': 'US-West',
+256 silly get     'content-encoding': 'gzip',
+256 silly get     'content-length': '3882',
+256 silly get     'accept-ranges': 'bytes',
+256 silly get     date: 'Tue, 13 Feb 2018 19:35:59 GMT',
+256 silly get     via: '1.1 varnish',
+256 silly get     age: '9046',
+256 silly get     connection: 'keep-alive',
+256 silly get     'x-served-by': 'cache-pao17430-PAO',
+256 silly get     'x-cache': 'HIT',
+256 silly get     'x-cache-hits': '15',
+256 silly get     'x-timer': 'S1518550559.122271,VS0,VE0',
+256 silly get     vary: 'Accept-Encoding, Accept' } ]
+257 verbose get saving bindings to /root/.npm/registry.npmjs.org/bindings/.cache.json
+258 http 200 https://registry.npmjs.org/nan
+259 verbose headers { 'content-type': 'application/json; charset=UTF-8',
+259 verbose headers   server: 'UploadServer',
+259 verbose headers   'cache-control': 'max-age=300',
+259 verbose headers   'last-modified': 'Sat, 3 Feb 2018 19:08:49 GMT',
+259 verbose headers   etag: '"5a7608c1-20c40"',
+259 verbose headers   'x-npm-region': 'US-West',
+259 verbose headers   'content-encoding': 'gzip',
+259 verbose headers   'content-length': '15715',
+259 verbose headers   'accept-ranges': 'bytes',
+259 verbose headers   date: 'Tue, 13 Feb 2018 19:35:59 GMT',
+259 verbose headers   via: '1.1 varnish',
+259 verbose headers   age: '8042',
+259 verbose headers   connection: 'keep-alive',
+259 verbose headers   'x-served-by': 'cache-pao17440-PAO',
+259 verbose headers   'x-cache': 'HIT',
+259 verbose headers   'x-cache-hits': '19',
+259 verbose headers   'x-timer': 'S1518550559.127885,VS0,VE0',
+259 verbose headers   vary: 'Accept-Encoding, Accept' }
+260 silly get cb [ 200,
+260 silly get   { 'content-type': 'application/json; charset=UTF-8',
+260 silly get     server: 'UploadServer',
+260 silly get     'cache-control': 'max-age=300',
+260 silly get     'last-modified': 'Sat, 3 Feb 2018 19:08:49 GMT',
+260 silly get     etag: '"5a7608c1-20c40"',
+260 silly get     'x-npm-region': 'US-West',
+260 silly get     'content-encoding': 'gzip',
+260 silly get     'content-length': '15715',
+260 silly get     'accept-ranges': 'bytes',
+260 silly get     date: 'Tue, 13 Feb 2018 19:35:59 GMT',
+260 silly get     via: '1.1 varnish',
+260 silly get     age: '8042',
+260 silly get     connection: 'keep-alive',
+260 silly get     'x-served-by': 'cache-pao17440-PAO',
+260 silly get     'x-cache': 'HIT',
+260 silly get     'x-cache-hits': '19',
+260 silly get     'x-timer': 'S1518550559.127885,VS0,VE0',
+260 silly get     vary: 'Accept-Encoding, Accept' } ]
+261 verbose get saving nan to /root/.npm/registry.npmjs.org/nan/.cache.json
+262 silly addNameRange number 2 { name: 'bindings', range: '>=1.3.0 <1.4.0', hasData: true }
+263 silly addNameRange versions [ 'bindings',
+263 silly addNameRange   [ '0.0.1',
+263 silly addNameRange     '0.1.0',
+263 silly addNameRange     '0.1.1',
+263 silly addNameRange     '0.2.0',
+263 silly addNameRange     '0.2.1',
+263 silly addNameRange     '0.2.2',
+263 silly addNameRange     '0.2.3',
+263 silly addNameRange     '0.2.4',
+263 silly addNameRange     '0.3.0',
+263 silly addNameRange     '0.4.0',
+263 silly addNameRange     '1.0.0',
+263 silly addNameRange     '1.1.0',
+263 silly addNameRange     '1.1.1',
+263 silly addNameRange     '1.2.0',
+263 silly addNameRange     '1.2.1',
+263 silly addNameRange     '1.3.0' ] ]
+264 silly addNamed bindings@1.3.0
+265 verbose addNamed "1.3.0" is a plain semver version for bindings
+266 silly mapToRegistry name bindings
+267 silly mapToRegistry using default registry
+268 silly mapToRegistry registry https://registry.npmjs.org/
+269 silly mapToRegistry uri https://registry.npmjs.org/bindings
+270 verbose addRemoteTarball https://registry.npmjs.org/bindings/-/bindings-1.3.0.tgz not in flight; adding
+271 verbose addRemoteTarball [ 'https://registry.npmjs.org/bindings/-/bindings-1.3.0.tgz',
+271 verbose addRemoteTarball   'b346f6ecf6a95f5a815c5839fc7cdb22502f1ed7' ]
+272 info retry fetch attempt 1 at 11:35:59
+273 info attempt registry request try #1 at 11:35:59
+274 http fetch GET https://registry.npmjs.org/bindings/-/bindings-1.3.0.tgz
+275 silly addNameRange number 2 { name: 'nan', range: '>=2.8.0 <2.9.0', hasData: true }
+276 silly addNameRange versions [ 'nan',
+276 silly addNameRange   [ '0.3.0-wip',
+276 silly addNameRange     '0.3.0-wip2',
+276 silly addNameRange     '0.3.0',
+276 silly addNameRange     '0.3.1',
+276 silly addNameRange     '0.3.2',
+276 silly addNameRange     '0.4.0',
+276 silly addNameRange     '0.4.1',
+276 silly addNameRange     '0.4.2',
+276 silly addNameRange     '0.4.3',
+276 silly addNameRange     '0.4.4',
+276 silly addNameRange     '0.5.0',
+276 silly addNameRange     '0.5.1',
+276 silly addNameRange     '0.5.2',
+276 silly addNameRange     '0.6.0',
+276 silly addNameRange     '0.7.0',
+276 silly addNameRange     '0.7.1',
+276 silly addNameRange     '0.8.0',
+276 silly addNameRange     '1.0.0',
+276 silly addNameRange     '1.1.0',
+276 silly addNameRange     '1.1.1',
+276 silly addNameRange     '1.1.2',
+276 silly addNameRange     '1.2.0',
+276 silly addNameRange     '1.3.0',
+276 silly addNameRange     '1.4.0',
+276 silly addNameRange     '1.4.1',
+276 silly addNameRange     '1.5.0',
+276 silly addNameRange     '1.4.2',
+276 silly addNameRange     '1.4.3',
+276 silly addNameRange     '1.5.1',
+276 silly addNameRange     '1.5.2',
+276 silly addNameRange     '1.6.0',
+276 silly addNameRange     '1.5.3',
+276 silly addNameRange     '1.6.1',
+276 silly addNameRange     '1.6.2',
+276 silly addNameRange     '1.7.0',
+276 silly addNameRange     '1.8.0',
+276 silly addNameRange     '1.8.1',
+276 silly addNameRange     '1.8.2',
+276 silly addNameRange     '1.8.3',
+276 silly addNameRange     '1.8.4',
+276 silly addNameRange     '1.9.0',
+276 silly addNameRange     '2.0.0',
+276 silly addNameRange     '2.0.1',
+276 silly addNameRange     '2.0.2',
+276 silly addNameRange     '2.0.3',
+276 silly addNameRange     '2.0.4',
+276 silly addNameRange     '2.0.5',
+276 silly addNameRange     '2.0.6',
+276 silly addNameRange     '2.0.7',
+276 silly addNameRange     '2.0.8',
+276 silly addNameRange     '2.0.9',
+276 silly addNameRange     '2.1.0',
+276 silly addNameRange     '2.2.0',
+276 silly addNameRange     '2.2.1',
+276 silly addNameRange     '2.3.0',
+276 silly addNameRange     '2.3.1',
+276 silly addNameRange     '2.3.2',
+276 silly addNameRange     '2.3.3',
+276 silly addNameRange     '2.3.4',
+276 silly addNameRange     '2.3.5',
+276 silly addNameRange     '2.4.0',
+276 silly addNameRange     '2.5.0',
+276 silly addNameRange     '2.5.1',
+276 silly addNameRange     '2.6.0',
+276 silly addNameRange     '2.6.1',
+276 silly addNameRange     '2.6.2',
+276 silly addNameRange     '2.7.0',
+276 silly addNameRange     '2.8.0' ] ]
+277 silly addNamed nan@2.8.0
+278 verbose addNamed "2.8.0" is a plain semver version for nan
+279 silly mapToRegistry name nan
+280 silly mapToRegistry using default registry
+281 silly mapToRegistry registry https://registry.npmjs.org/
+282 silly mapToRegistry uri https://registry.npmjs.org/nan
+283 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-2.8.0.tgz not in flight; adding
+284 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-2.8.0.tgz',
+284 verbose addRemoteTarball   'ed715f3fe9de02b57a5e6252d90a96675e1f085a' ]
+285 info retry fetch attempt 1 at 11:36:00
+286 info attempt registry request try #1 at 11:36:00
+287 http fetch GET https://registry.npmjs.org/nan/-/nan-2.8.0.tgz
+288 http fetch 200 https://registry.npmjs.org/bindings/-/bindings-1.3.0.tgz
+289 silly fetchAndShaCheck shasum b346f6ecf6a95f5a815c5839fc7cdb22502f1ed7
+290 verbose addTmpTarball /tmp/npm-3594-b392a4f8/registry.npmjs.org/bindings/-/bindings-1.3.0.tgz not in flight; adding
+291 verbose addTmpTarball already have metadata; skipping unpack for bindings@1.3.0
+292 http fetch 200 https://registry.npmjs.org/nan/-/nan-2.8.0.tgz
+293 silly fetchAndShaCheck shasum ed715f3fe9de02b57a5e6252d90a96675e1f085a
+294 verbose addTmpTarball /tmp/npm-3594-b392a4f8/registry.npmjs.org/nan/-/nan-2.8.0.tgz not in flight; adding
+295 verbose addTmpTarball already have metadata; skipping unpack for nan@2.8.0
+296 silly cache afterAdd bindings@1.3.0
+297 verbose afterAdd /root/.npm/bindings/1.3.0/package/package.json not in flight; writing
+298 verbose afterAdd /root/.npm/bindings/1.3.0/package/package.json written
+299 silly cache afterAdd nan@2.8.0
+300 verbose afterAdd /root/.npm/nan/2.8.0/package/package.json not in flight; writing
+301 verbose afterAdd /root/.npm/nan/2.8.0/package/package.json written
+302 silly install resolved [ { name: 'bindings',
+302 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+302 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+302 silly install resolved     version: '1.3.0',
+302 silly install resolved     author:
+302 silly install resolved      { name: 'Nathan Rajlich',
+302 silly install resolved        email: 'nathan@tootallnate.net',
+302 silly install resolved        url: 'http://tootallnate.net' },
+302 silly install resolved     repository:
+302 silly install resolved      { type: 'git',
+302 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+302 silly install resolved     main: './bindings.js',
+302 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+302 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+302 silly install resolved     license: 'MIT',
+302 silly install resolved     gitHead: '7fd065ee85386ad3d074d2506e03abe8f9b1588b',
+302 silly install resolved     _id: 'bindings@1.3.0',
+302 silly install resolved     _npmVersion: '5.0.3',
+302 silly install resolved     _nodeVersion: '8.1.3',
+302 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+302 silly install resolved     dist:
+302 silly install resolved      { integrity: 'sha512-DpLh5EzMR2kzvX1KIlVC0VkC3iZtHKTgdtZ0a3pglBZdaQFjt5S9g9xd1lE+YvXyfd6mtCeRnrUfOLYiTMlNSw==',
+302 silly install resolved        shasum: 'b346f6ecf6a95f5a815c5839fc7cdb22502f1ed7',
+302 silly install resolved        tarball: 'https://registry.npmjs.org/bindings/-/bindings-1.3.0.tgz' },
+302 silly install resolved     maintainers: [ [Object] ],
+302 silly install resolved     _npmOperationalInternal:
+302 silly install resolved      { host: 's3://npm-registry-packages',
+302 silly install resolved        tmp: 'tmp/bindings-1.3.0.tgz_1500923768710_0.3334669852629304' },
+302 silly install resolved     directories: {},
+302 silly install resolved     _shasum: 'b346f6ecf6a95f5a815c5839fc7cdb22502f1ed7',
+302 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.3.0.tgz',
+302 silly install resolved     _from: 'bindings@>=1.3.0 <1.4.0' },
+302 silly install resolved   { name: 'nan',
+302 silly install resolved     version: '2.8.0',
+302 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 9 compatibility',
+302 silly install resolved     main: 'include_dirs.js',
+302 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+302 silly install resolved     scripts:
+302 silly install resolved      { test: 'tap --gc --stderr test/js/*-test.js',
+302 silly install resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2015 --directory test',
+302 silly install resolved        docs: 'doc/.build.sh' },
+302 silly install resolved     contributors:
+302 silly install resolved      [ [Object],
+302 silly install resolved        [Object],
+302 silly install resolved        [Object],
+302 silly install resolved        [Object],
+302 silly install resolved        [Object],
+302 silly install resolved        [Object],
+302 silly install resolved        [Object],
+302 silly install resolved        [Object] ],
+302 silly install resolved     devDependencies:
+302 silly install resolved      { bindings: '~1.2.1',
+302 silly install resolved        commander: '^2.8.1',
+302 silly install resolved        glob: '^5.0.14',
+302 silly install resolved        request: '=2.81.0',
+302 silly install resolved        'node-gyp': '~3.6.2',
+302 silly install resolved        'readable-stream': '^2.1.4',
+302 silly install resolved        tap: '~0.7.1',
+302 silly install resolved        xtend: '~4.0.0' },
+302 silly install resolved     license: 'MIT',
+302 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+302 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+302 silly install resolved     _id: 'nan@2.8.0',
+302 silly install resolved     _shasum: 'ed715f3fe9de02b57a5e6252d90a96675e1f085a',
+302 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.8.0.tgz',
+302 silly install resolved     _from: 'nan@>=2.8.0 <2.9.0',
+302 silly install resolved     _npmVersion: '3.10.10',
+302 silly install resolved     _nodeVersion: '6.12.0',
+302 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+302 silly install resolved     dist:
+302 silly install resolved      { shasum: 'ed715f3fe9de02b57a5e6252d90a96675e1f085a',
+302 silly install resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.8.0.tgz' },
+302 silly install resolved     maintainers: [ [Object], [Object] ],
+302 silly install resolved     _npmOperationalInternal:
+302 silly install resolved      { host: 's3://npm-registry-packages',
+302 silly install resolved        tmp: 'tmp/nan-2.8.0.tgz_1510745663002_0.45465062628500164' },
+302 silly install resolved     directories: {} } ]
+303 info install bindings@1.3.0 into /usr/local/lib/node_modules/onoff/node_modules/epoll
+304 info install nan@2.8.0 into /usr/local/lib/node_modules/onoff/node_modules/epoll
+305 info installOne bindings@1.3.0
+306 verbose installOne of bindings to /usr/local/lib/node_modules/onoff/node_modules/epoll not in flight; installing
+307 info installOne nan@2.8.0
+308 verbose installOne of nan to /usr/local/lib/node_modules/onoff/node_modules/epoll not in flight; installing
+309 verbose lock using /root/.npm/_locks/bindings-986bd2a734aeda4d.lock for /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings
+310 verbose lock using /root/.npm/_locks/nan-b11e02961bedc61b.lock for /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan
+311 silly install write writing bindings 1.3.0 to /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings
+312 silly install write writing nan 2.8.0 to /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan
+313 verbose unbuild lib/node_modules/onoff/node_modules/epoll/node_modules/bindings
+314 verbose unbuild lib/node_modules/onoff/node_modules/epoll/node_modules/nan
+315 silly gentlyRm /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings is being purged from base /usr/local
+316 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings
+317 silly gentlyRm /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan is being purged from base /usr/local
+318 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan
+319 verbose tar unpack /root/.npm/bindings/1.3.0/package.tgz
+320 verbose tar unpacking to /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings
+321 silly gentlyRm /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings is being purged
+322 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings
+323 verbose tar unpack /root/.npm/nan/2.8.0/package.tgz
+324 verbose tar unpacking to /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan
+325 silly gentlyRm /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan is being purged
+326 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan
+327 silly gunzTarPerm modes [ '755', '644' ]
+328 silly gunzTarPerm modes [ '755', '644' ]
+329 silly gunzTarPerm extractEntry package.json
+330 silly gunzTarPerm extractEntry package.json
+331 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+332 silly gunzTarPerm extractEntry README.md
+333 silly gunzTarPerm extractEntry bindings.js
+334 silly gunzTarPerm extractEntry README.md
+335 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+336 silly gunzTarPerm extractEntry include_dirs.js
+337 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+338 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+339 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+340 silly gunzTarPerm extractEntry LICENSE.md
+341 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+342 silly gunzTarPerm extractEntry doc/new.md
+343 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+344 silly gunzTarPerm extractEntry doc/asyncworker.md
+345 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+346 silly gunzTarPerm extractEntry doc/callback.md
+347 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+348 silly gunzTarPerm extractEntry doc/converters.md
+349 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+350 silly gunzTarPerm extractEntry doc/errors.md
+351 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+352 silly gunzTarPerm extractEntry doc/json.md
+353 silly gunzTarPerm modified mode [ 'doc/json.md', 436, 420 ]
+354 verbose write writing to /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings/package.json
+355 silly gunzTarPerm extractEntry doc/maybe_types.md
+356 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+357 silly gunzTarPerm extractEntry doc/methods.md
+358 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+359 info preinstall bindings@1.3.0
+360 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings/package.json
+361 silly gunzTarPerm extractEntry doc/buffers.md
+362 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+363 silly gunzTarPerm extractEntry doc/node_misc.md
+364 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+365 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings/package.json
+366 silly gunzTarPerm extractEntry doc/object_wrappers.md
+367 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 420 ]
+368 silly gunzTarPerm extractEntry doc/persistent.md
+369 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+370 silly install resolved []
+371 verbose about to build /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings
+372 info build /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings
+373 silly gunzTarPerm extractEntry doc/scopes.md
+374 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+375 silly gunzTarPerm extractEntry doc/script.md
+376 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+377 info linkStuff bindings@1.3.0
+378 silly linkStuff bindings@1.3.0 has /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules as its parent node_modules
+379 silly linkStuff bindings@1.3.0 is part of a global install
+380 silly linkStuff bindings@1.3.0 is installed into a global node_modules
+381 silly gunzTarPerm extractEntry doc/string_bytes.md
+382 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+383 silly gunzTarPerm extractEntry doc/v8_internals.md
+384 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+385 verbose linkBins bindings@1.3.0
+386 verbose linkMans bindings@1.3.0
+387 verbose rebuildBundles bindings@1.3.0
+388 info install bindings@1.3.0
+389 info postinstall bindings@1.3.0
+390 silly gunzTarPerm extractEntry doc/v8_misc.md
+391 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+392 silly gunzTarPerm extractEntry nan.h
+393 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+394 verbose unlock done using /root/.npm/_locks/bindings-986bd2a734aeda4d.lock for /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/bindings
+395 silly gunzTarPerm extractEntry nan_callbacks.h
+396 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+397 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+398 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+399 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+400 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+401 silly gunzTarPerm extractEntry nan_converters.h
+402 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+403 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+404 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+405 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+406 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+407 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+408 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+409 silly gunzTarPerm extractEntry nan_json.h
+410 silly gunzTarPerm modified mode [ 'nan_json.h', 436, 420 ]
+411 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+412 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+413 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+414 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+415 silly gunzTarPerm extractEntry nan_new.h
+416 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+417 silly gunzTarPerm extractEntry nan_object_wrap.h
+418 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+419 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+420 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+421 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+422 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+423 silly gunzTarPerm extractEntry nan_private.h
+424 silly gunzTarPerm modified mode [ 'nan_private.h', 436, 420 ]
+425 silly gunzTarPerm extractEntry nan_string_bytes.h
+426 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+427 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+428 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 420 ]
+429 silly gunzTarPerm extractEntry nan_weak.h
+430 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+431 silly gunzTarPerm extractEntry CHANGELOG.md
+432 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+433 silly gunzTarPerm extractEntry tools/package.json
+434 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+435 silly gunzTarPerm extractEntry tools/README.md
+436 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+437 silly gunzTarPerm extractEntry tools/1to2.js
+438 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+439 verbose write writing to /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan/package.json
+440 info preinstall nan@2.8.0
+441 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan/package.json
+442 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan/package.json
+443 silly install resolved []
+444 verbose about to build /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan
+445 info build /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan
+446 info linkStuff nan@2.8.0
+447 silly linkStuff nan@2.8.0 has /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules as its parent node_modules
+448 silly linkStuff nan@2.8.0 is part of a global install
+449 silly linkStuff nan@2.8.0 is installed into a global node_modules
+450 verbose linkBins nan@2.8.0
+451 verbose linkMans nan@2.8.0
+452 verbose rebuildBundles nan@2.8.0
+453 info install nan@2.8.0
+454 info postinstall nan@2.8.0
+455 verbose unlock done using /root/.npm/_locks/nan-b11e02961bedc61b.lock for /usr/local/lib/node_modules/onoff/node_modules/epoll/node_modules/nan
+456 verbose about to build /usr/local/lib/node_modules/onoff/node_modules/epoll
+457 info build /usr/local/lib/node_modules/onoff/node_modules/epoll
+458 info linkStuff epoll@1.0.2
+459 silly linkStuff epoll@1.0.2 has /usr/local/lib/node_modules/onoff/node_modules as its parent node_modules
+460 silly linkStuff epoll@1.0.2 is part of a global install
+461 silly linkStuff epoll@1.0.2 is installed into a global node_modules
+462 verbose linkBins epoll@1.0.2
+463 verbose linkMans epoll@1.0.2
+464 verbose rebuildBundles epoll@1.0.2
+465 verbose rebuildBundles [ 'bindings', 'nan' ]
+466 info install epoll@1.0.2
+467 verbose unsafe-perm in lifecycle false
+468 info epoll@1.0.2 Failed to exec install script
+469 verbose unlock done using /root/.npm/_locks/epoll-4c03fef6dbce0644.lock for /usr/local/lib/node_modules/onoff/node_modules/epoll
+470 verbose about to build /usr/local/lib/node_modules/onoff
+471 verbose unlock done using /root/.npm/_locks/onoff-f2713974fa0ced28.lock for /usr/local/lib/node_modules/onoff
+472 verbose stack Error: epoll@1.0.2 install: `node-gyp rebuild`
+472 verbose stack Exit status 1
+472 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:214:16)
+472 verbose stack     at emitTwo (events.js:87:13)
+472 verbose stack     at EventEmitter.emit (events.js:172:7)
+472 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+472 verbose stack     at emitTwo (events.js:87:13)
+472 verbose stack     at ChildProcess.emit (events.js:172:7)
+472 verbose stack     at maybeClose (internal/child_process.js:818:16)
+472 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+473 verbose pkgid epoll@1.0.2
+474 verbose cwd /home/pi/test-repoRPi/nodeJS
+475 error Linux 4.9.35+
+476 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "onoff" "-g"
+477 error node v4.2.1
+478 error npm  v2.14.7
+479 error code ELIFECYCLE
+480 error epoll@1.0.2 install: `node-gyp rebuild`
+480 error Exit status 1
+481 error Failed at the epoll@1.0.2 install script 'node-gyp rebuild'.
+481 error This is most likely a problem with the epoll package,
+481 error not with npm itself.
+481 error Tell the author that this fails on your system:
+481 error     node-gyp rebuild
+481 error You can get their info via:
+481 error     npm owner ls epoll
+481 error There is likely additional logging output above.
+482 verbose exit [ 1, true ]
+483 verbose unbuild lib/node_modules/onoff/node_modules/epoll
+484 info preuninstall epoll@1.0.2
+485 info uninstall epoll@1.0.2
+486 verbose unbuild rmStuff epoll@1.0.2 from /usr/local/lib/node_modules
+487 verbose unbuild rmStuff in /usr/local/lib/node_modules/onoff/node_modules
+488 info postuninstall epoll@1.0.2
+489 silly gentlyRm /usr/local/lib/node_modules/onoff/node_modules/epoll is being purged from base /usr/local
+490 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/onoff/node_modules/epoll
+491 silly vacuum-fs purging /usr/local/lib/node_modules/onoff/node_modules/epoll
+492 silly vacuum-fs removing /usr/local/lib/node_modules/onoff/node_modules
+493 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules/onoff
+494 verbose unbuild lib/node_modules/onoff
+495 info preuninstall onoff@1.2.0
+496 info uninstall onoff@1.2.0
+497 verbose unbuild rmStuff onoff@1.2.0 from /usr/local/lib/node_modules
+498 info postuninstall onoff@1.2.0
+499 silly gentlyRm /usr/local/lib/node_modules/onoff is being purged from base /usr/local
+500 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/onoff
+501 silly vacuum-fs purging /usr/local/lib/node_modules/onoff
+502 silly vacuum-fs quitting because other entries in /usr/local/lib/node_modules
